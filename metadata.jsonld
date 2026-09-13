@@ -434,7 +434,7 @@
         {
           "@type": "DataDownload",
           "name": "U_mean_15AOA.csv",
-          "contentUrl": "https://repository.lboro.ac.uk/ndownloader/files/67695108",
+          "contentUrl": "https://dhamotharan7.github.io/NWTF_JSON/U_mean_15AOA.csv",
           "encodingFormat": "text/csv",
           "description": "Mean streamwise velocity at 15 degree angle of attack."
         },
