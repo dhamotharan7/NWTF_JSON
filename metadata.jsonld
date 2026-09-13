@@ -1,0 +1,507 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "@id": "https://dhamotharan7.github.io/NWTF_JSON/#dataset",
+  "identifier": "NWTF-AI-TEST-001",
+  "version": "2.0",
+  "name": "Low-Frequency Dipole Noise Mechanisms in Stalled Aerofoil",
+  "url": "https://dhamotharan7.github.io/NWTF_JSON/",
+  "sameAs": "https://www.nwtf.ac.uk/dataset/low-frequency-dipole-noise-mechanisms-in-stalled-aerofoil/",
+  "mainEntityOfPage": "https://dhamotharan7.github.io/NWTF_JSON/",
+  "description": "Experimental aerodynamic dataset for a NACA 0012 aerofoil under stalled conditions. Time-resolved Particle Image Velocimetry measurements are used to reconstruct velocity and pressure fields and investigate low-frequency dipole noise mechanisms. The page provides processed CSV files, CAD geometry, the complete original archive and MATLAB analysis code.",
+  "keywords": [
+    "aerodynamics",
+    "experimental aerodynamics",
+    "aeroacoustics",
+    "NACA 0012",
+    "stalled aerofoil",
+    "Particle Image Velocimetry",
+    "PIV",
+    "pressure reconstruction",
+    "dipole noise",
+    "fluid mechanics",
+    "water flume"
+  ],
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "Douglas W. Carter",
+      "sameAs": "https://www.linkedin.com/in/douglas-carter-5156921a0/",
+      "email": "mailto:dcarter10@illinoistech.edu",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Department of Aeronautics and Astronautics, University of Southampton"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Bharathram Ganapathisubramani",
+      "sameAs": "https://www.linkedin.com/in/bharathram-ganapathisubramani-2365231a/",
+      "email": "mailto:G.Bharath@soton.ac.uk",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Department of Aeronautics and Astronautics, University of Southampton"
+      }
+    }
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "UK National Wind Tunnel Facility",
+    "url": "https://www.nwtf.ac.uk/"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "UK National Wind Tunnel Facility",
+    "url": "https://www.nwtf.ac.uk/"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "NWTF Experimental Database",
+    "url": "https://www.nwtf.ac.uk/experimental-database/"
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dateModified": "2026-09-13",
+  "measurementTechnique": [
+    "Time-resolved Particle Image Velocimetry (PIV)",
+    "Pressure-field reconstruction using a pressure Poisson equation"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Streamwise velocity",
+      "alternateName": "U"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Surface-normal velocity",
+      "alternateName": "V"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pressure",
+      "alternateName": "P"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Freestream velocity",
+      "alternateName": "U_inf",
+      "value": 0.5366,
+      "unitText": "m/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Chord-based Reynolds number",
+      "alternateName": "Re_c",
+      "value": 71000,
+      "unitText": "dimensionless"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Experimental angle of attack cases",
+      "alternateName": "AOA",
+      "value": "4, 13, 15",
+      "unitText": "degree",
+      "description": "The page describes experimental conditions at 4, 13 and 15 degrees. Processed downloadable field datasets listed on this page are provided for 13 and 15 degrees."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Working fluid",
+      "value": "water"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Kinematic viscosity",
+      "alternateName": "nu",
+      "value": 1e-06,
+      "unitText": "m^2/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Measurement duration per case",
+      "value": 26.8,
+      "unitText": "s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sampling frequency",
+      "value": 1000,
+      "unitText": "Hz"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Dimensionless frequency range",
+      "alternateName": "f*",
+      "value": "f* <= 3",
+      "unitText": "dimensionless"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "High-frequency temporal filter cutoff",
+      "value": 10,
+      "unitText": "Hz",
+      "description": "Velocity fields were temporally filtered to remove mechanical noise above 10 Hz."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Aerofoil chord length",
+      "value": 0.15,
+      "unitText": "m"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Aerofoil total span",
+      "value": 0.7,
+      "unitText": "m"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Submerged aerofoil span",
+      "value": 0.483,
+      "unitText": "m"
+    }
+  ],
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Aerofoil geometry",
+      "value": "NACA 0012"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Flow regimes",
+      "value": "attached flow, transitional stall, deep stall"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Measurement plane",
+      "value": "streamwise and surface-normal plane at mid-span"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PIV camera count",
+      "value": 3,
+      "unitText": "high-speed cameras"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Experimental facility",
+      "value": "recirculating water flume, University of Southampton"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Available processed download angles of attack",
+      "value": "13, 15",
+      "unitText": "degree"
+    }
+  ],
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "NACA 0012 aerofoil"
+    },
+    {
+      "@type": "Thing",
+      "name": "Attached flow, transitional stall, and deep stall"
+    },
+    {
+      "@type": "Thing",
+      "name": "Low-frequency aerodynamic dipole noise"
+    }
+  ],
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Recirculating water flume, University of Southampton",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Southampton",
+      "addressCountry": "GB"
+    }
+  },
+  "citation": {
+    "@type": "ScholarlyArticle",
+    "name": "Data-driven determination of low-frequency dipole noise mechanisms in stalled airfoils",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Douglas W. Carter"
+      },
+      {
+        "@type": "Person",
+        "name": "Bharathram Ganapathisubramani"
+      }
+    ],
+    "datePublished": "2023",
+    "isPartOf": {
+      "@type": "Periodical",
+      "name": "Experiments in Fluids"
+    },
+    "identifier": "https://doi.org/10.1007/s00348-023-03577-z",
+    "url": "https://doi.org/10.1007/s00348-023-03577-z"
+  },
+  "isBasedOn": "https://eprints.soton.ac.uk/473397/",
+  "funding": [
+    {
+      "@type": "Grant",
+      "identifier": "EP/X011836/1",
+      "funder": {
+        "@type": "Organization",
+        "name": "Engineering and Physical Sciences Research Council (EPSRC)"
+      }
+    },
+    {
+      "@type": "Grant",
+      "identifier": "EP/R010900/1",
+      "funder": {
+        "@type": "Organization",
+        "name": "Engineering and Physical Sciences Research Council (EPSRC)"
+      }
+    },
+    {
+      "@type": "Grant",
+      "identifier": "HOMER 769237",
+      "funder": {
+        "@type": "Organization",
+        "name": "H2020 Future and Emerging Technologies"
+      }
+    }
+  ],
+  "hasPart": [
+    {
+      "@type": "Dataset",
+      "@id": "https://dhamotharan7.github.io/NWTF_JSON/#case-13deg",
+      "name": "NACA 0012 processed field data at 13 degree angle of attack",
+      "description": "Processed velocity and reconstructed pressure-field outputs for the 13 degree angle-of-attack condition.",
+      "variableMeasured": [
+        {
+          "@type": "PropertyValue",
+          "name": "Angle of attack",
+          "alternateName": "AOA",
+          "value": 13,
+          "unitText": "degree"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Freestream velocity",
+          "alternateName": "U_inf",
+          "value": 0.5366,
+          "unitText": "m/s"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Streamwise mean velocity",
+          "alternateName": "U_mean"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Surface-normal mean velocity",
+          "alternateName": "V_mean"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Streamwise velocity variance",
+          "alternateName": "U_var"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Surface-normal velocity variance",
+          "alternateName": "V_var"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Mean pressure",
+          "alternateName": "P_mean"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Pressure variance",
+          "alternateName": "P_var"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RANS pressure estimate",
+          "alternateName": "P_RANS"
+        }
+      ],
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "name": "U_mean_13AOA.csv",
+          "contentUrl": "https://repository.lboro.ac.uk/ndownloader/files/67695087",
+          "encodingFormat": "text/csv",
+          "description": "Mean streamwise velocity at 13 degree angle of attack."
+        },
+        {
+          "@type": "DataDownload",
+          "name": "V_mean_13AOA.csv",
+          "contentUrl": "https://repository.lboro.ac.uk/ndownloader/files/67695090",
+          "encodingFormat": "text/csv",
+          "description": "Mean surface-normal velocity at 13 degree angle of attack."
+        },
+        {
+          "@type": "DataDownload",
+          "name": "U_Var_13AOA.csv",
+          "contentUrl": "https://repository.lboro.ac.uk/ndownloader/files/67695093",
+          "encodingFormat": "text/csv",
+          "description": "Streamwise velocity variance at 13 degree angle of attack."
+        },
+        {
+          "@type": "DataDownload",
+          "name": "V_Var_13AOA.csv",
+          "contentUrl": "https://repository.lboro.ac.uk/ndownloader/files/67695096",
+          "encodingFormat": "text/csv",
+          "description": "Surface-normal velocity variance at 13 degree angle of attack."
+        },
+        {
+          "@type": "DataDownload",
+          "name": "P_mean_13AOA.csv",
+          "contentUrl": "https://repository.lboro.ac.uk/ndownloader/files/67695078",
+          "encodingFormat": "text/csv",
+          "description": "Mean reconstructed pressure at 13 degree angle of attack."
+        },
+        {
+          "@type": "DataDownload",
+          "name": "P_var_13AOA.csv",
+          "contentUrl": "https://repository.lboro.ac.uk/ndownloader/files/67695084",
+          "encodingFormat": "text/csv",
+          "description": "Pressure variance at 13 degree angle of attack."
+        },
+        {
+          "@type": "DataDownload",
+          "name": "P_RANS_13AOA.csv",
+          "contentUrl": "https://repository.lboro.ac.uk/ndownloader/files/67695081",
+          "encodingFormat": "text/csv",
+          "description": "RANS pressure estimate at 13 degree angle of attack."
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://dhamotharan7.github.io/NWTF_JSON/#case-15deg",
+      "name": "NACA 0012 processed field data at 15 degree angle of attack",
+      "description": "Processed velocity and reconstructed pressure-field outputs for the 15 degree angle-of-attack condition.",
+      "variableMeasured": [
+        {
+          "@type": "PropertyValue",
+          "name": "Angle of attack",
+          "alternateName": "AOA",
+          "value": 15,
+          "unitText": "degree"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Freestream velocity",
+          "alternateName": "U_inf",
+          "value": 0.5366,
+          "unitText": "m/s"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Streamwise mean velocity",
+          "alternateName": "U_mean"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Surface-normal mean velocity",
+          "alternateName": "V_mean"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Streamwise velocity variance",
+          "alternateName": "U_var"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Surface-normal velocity variance",
+          "alternateName": "V_var"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Mean pressure",
+          "alternateName": "P_mean"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Pressure variance",
+          "alternateName": "P_var"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "RANS pressure estimate",
+          "alternateName": "P_RANS"
+        }
+      ],
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "name": "U_mean_15AOA.csv",
+          "contentUrl": "https://repository.lboro.ac.uk/ndownloader/files/67695108",
+          "encodingFormat": "text/csv",
+          "description": "Mean streamwise velocity at 15 degree angle of attack."
+        },
+        {
+          "@type": "DataDownload",
+          "name": "V_mean_15AOA.csv",
+          "contentUrl": "https://repository.lboro.ac.uk/ndownloader/files/67695111",
+          "encodingFormat": "text/csv",
+          "description": "Mean surface-normal velocity at 15 degree angle of attack."
+        },
+        {
+          "@type": "DataDownload",
+          "name": "U_Var_15AOA.csv",
+          "contentUrl": "https://repository.lboro.ac.uk/ndownloader/files/67695114",
+          "encodingFormat": "text/csv",
+          "description": "Streamwise velocity variance at 15 degree angle of attack."
+        },
+        {
+          "@type": "DataDownload",
+          "name": "V_Var_15AOA.csv",
+          "contentUrl": "https://repository.lboro.ac.uk/ndownloader/files/67695117",
+          "encodingFormat": "text/csv",
+          "description": "Surface-normal velocity variance at 15 degree angle of attack."
+        },
+        {
+          "@type": "DataDownload",
+          "name": "P_mean_15AOA.csv",
+          "contentUrl": "https://repository.lboro.ac.uk/ndownloader/files/67695099",
+          "encodingFormat": "text/csv",
+          "description": "Mean reconstructed pressure at 15 degree angle of attack."
+        },
+        {
+          "@type": "DataDownload",
+          "name": "P_var_15AOA.csv",
+          "contentUrl": "https://repository.lboro.ac.uk/ndownloader/files/67695105",
+          "encodingFormat": "text/csv",
+          "description": "Pressure variance at 15 degree angle of attack."
+        },
+        {
+          "@type": "DataDownload",
+          "name": "P_RANS_15AOA.csv",
+          "contentUrl": "https://repository.lboro.ac.uk/ndownloader/files/67695102",
+          "encodingFormat": "text/csv",
+          "description": "RANS pressure estimate at 15 degree angle of attack."
+        }
+      ]
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "NACA 0012 profile CAD file",
+      "contentUrl": "https://repository.lboro.ac.uk/ndownloader/files/65091708",
+      "description": "CAD/profile resource for the NACA 0012 model."
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Complete original dataset archive",
+      "contentUrl": "https://eprints.soton.ac.uk/473397/",
+      "description": "Original Southampton dataset archive containing raw and mean measurement data."
+    },
+    {
+      "@type": "DataDownload",
+      "name": "MATLAB analysis script",
+      "contentUrl": "https://repository.lboro.ac.uk/ndownloader/files/67695123",
+      "encodingFormat": "text/x-matlab",
+      "description": "MATLAB script for plotting mean velocity, pressure and pressure-coefficient fields."
+    }
+  ]
+}
