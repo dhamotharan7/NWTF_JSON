@@ -1,0 +1,58 @@
+{
+  "name": "nwtf-naca0012-15deg-velocity-pilot",
+  "title": "NACA 0012 mean streamwise velocity at 15 degrees",
+  "description": "One-file plotting pilot; signed dimensional values, original coordinate orientation.",
+  "resources": [
+    {
+      "name": "mean-velocity-15deg",
+      "path": "U_mean_15AOA.clean.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "x",
+            "type": "number",
+            "description": "Original x coordinate in metres; physical origin and axis direction require author confirmation."
+          },
+          {
+            "name": "y",
+            "type": "number",
+            "description": "Original y coordinate in metres; physical origin and axis direction require author confirmation."
+          },
+          {
+            "name": "U_mean",
+            "type": "number",
+            "description": "Signed mean velocity component in m/s; preserve sign, no normalisation."
+          }
+        ],
+        "missingValues": [
+          "NaN",
+          "nan",
+          ""
+        ]
+      }
+    }
+  ],
+  "nwtf": {
+    "datasetId": "NWTF-AI-TEST-001",
+    "angleOfAttackDegrees": 15,
+    "originalCSV": "U_mean_15AOA.csv",
+    "originalHeaderLines": 6,
+    "originalSHA256": "ee28761e40559486ee1376ecc5c2afee4e49cff2c73e66588442c01d39f04bbd",
+    "grid": {
+      "nx": 249,
+      "ny": 197,
+      "layout": "Cartesian grid; original rows vary y fastest, x slowest",
+      "rows": 49053
+    },
+    "plot": {
+      "quantity": "U_mean",
+      "normalisation": "none",
+      "signReversal": false,
+      "zeroIsMissing": false
+    },
+    "source": "https://dhamotharan7.github.io/NWTF_JSON/",
+    "scientificCitation": "https://doi.org/10.1007/s00348-023-03577-z"
+  }
+}
